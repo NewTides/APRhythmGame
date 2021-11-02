@@ -11,8 +11,8 @@ public class PlayerController : MonoBehaviour
     private float xStrafe;
     private float farRightX;
     private float farLeftX;
-    private float maxES;
-    private float currentES;
+    public int maxES;
+    public int currentES;
     public GameObject Player;
     
     // Start is called before the first frame update
@@ -25,7 +25,7 @@ public class PlayerController : MonoBehaviour
         farLeftX = posX - 2 * xStrafe;
         Player.transform.position = new Vector2 (posX, posY);
 
-        maxES = 100f;
+        maxES = 100;
         currentES = maxES;
         
         /* debug messages I used to figure out why the player could move off the left side of the screen instead of stopping.
@@ -37,7 +37,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (currentES != 0f)
+        if (currentES > 0)
         {
             HandleStrafe();
         }
@@ -60,6 +60,19 @@ public class PlayerController : MonoBehaviour
             posX -= xStrafe;
             Player.transform.position = new Vector2 (posX, posY);
         }
+    }
+
+    
+    private void OnTriggerEnter2D(Collider2D hit)
+    {
+        
+        if (hit.gameObject.tag == "Bullet")
+        {
+            
+            currentES -= hit.GetComponent<BulletController>().damage;
+            Debug.Log("Emotional Stability: " + currentES);
+        }
+        
     }
 
     private void GameOver()

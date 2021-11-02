@@ -132,6 +132,8 @@ GameObject:
   - component: {fileID: 187832103}
   - component: {fileID: 187832102}
   - component: {fileID: 187832101}
+  - component: {fileID: 187832104}
+  - component: {fileID: 187832105}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -151,6 +153,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa2e862f80306a04199228314fc8654e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxES: 0
+  currentES: 0
   Player: {fileID: 187832100}
 --- !u!212 &187832102
 SpriteRenderer:
@@ -216,6 +220,53 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &187832104
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 187832100}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 0.0001
+  m_LinearDrag: 0
+  m_AngularDrag: 0
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!61 &187832105
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 187832100}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.32, y: 0.32}
+    newSize: {x: 0.32, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.32, y: 0.32}
+  m_EdgeRadius: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -261,7 +312,7 @@ Camera:
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0.625
+    x: 0.626
     y: 0
     width: 1
     height: 1
@@ -505,7 +556,7 @@ GameObject:
   - component: {fileID: 1324642100}
   - component: {fileID: 1324642099}
   m_Layer: 0
-  m_Name: Enemy (Placeholder)
+  m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -523,6 +574,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e935d6df332f2e449b7d66ec9eaadd1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 7806029063261115578, guid: 246230a1fccdea640916d5f8492f3475, type: 3}
+  startY: 5.82
+  bulletX: 0
 --- !u!212 &1324642100
 SpriteRenderer:
   m_ObjectHideFlags: 0

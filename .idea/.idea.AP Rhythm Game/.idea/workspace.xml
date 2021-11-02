@@ -1,20 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3d86bdbe-76c6-4813-8e90-f563f408276e" name="Default Changelist" comment="" />
+    <list default="true" id="3d86bdbe-76c6-4813-8e90-f563f408276e" name="Default Changelist" comment="Double checking initial commit">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AP Rhythm Game/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AP Rhythm Game/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AP Rhythm Game/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AP Rhythm Game/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/EnemyTurnScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/EnemyTurnScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/EnemyTurnScene.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/EnemyTurnScene.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnemyController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EnemyController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Single Bullet Note.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Single Bullet Note.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ArtifactDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ArtifactDB" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/EditorInstance.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/EditorInstance.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ProtocolInstance.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ProtocolInstance.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/SourceAssetDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SourceAssetDB" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/Assets/Scripts/EnemyController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BulletController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
       </list>
     </option>
   </component>
   <component name="ProjectId" id="1zjSzafsEL5ypFAJuqsvibR6pD7" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -57,7 +79,24 @@
       <workItem from="1635343241476" duration="1779000" />
       <workItem from="1635345047079" duration="1789000" />
       <workItem from="1635346872047" duration="1790000" />
+      <workItem from="1635501008095" duration="444000" />
+      <workItem from="1635792369149" duration="1772000" />
+      <workItem from="1635794188762" duration="815000" />
+      <workItem from="1635795479379" duration="1456000" />
+      <workItem from="1635802581649" duration="1244000" />
+      <workItem from="1635812987231" duration="1301000" />
+      <workItem from="1635815233949" duration="687000" />
+      <workItem from="1635818214751" duration="1717000" />
+      <workItem from="1635828602983" duration="1083000" />
     </task>
+    <task id="LOCAL-00001" summary="Double checking initial commit">
+      <created>1635501300667</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1635501300667</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -65,4 +104,26 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Double checking initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Double checking initial commit" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="541" y="259" key="Github.ShareDialog" timestamp="1635501043773">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="541" y="259" key="Github.ShareDialog/0.0.1366.728/1366.-185.1920.1040@0.0.1366.728" timestamp="1635501043773" />
+    <state x="391" y="68" key="Github.UntrackedFilesDialog" timestamp="1635501177903">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="391" y="68" key="Github.UntrackedFilesDialog/0.0.1366.728/1366.-185.1920.1040@0.0.1366.728" timestamp="1635501177903" />
+    <state x="275" y="95" key="Vcs.Push.Dialog.v2" timestamp="1635501360545">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="95" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.-185.1920.1040@0.0.1366.728" timestamp="1635501360545" />
+    <state x="407" y="97" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1635501341029">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="407" y="97" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog/0.0.1366.728/1366.-185.1920.1040@0.0.1366.728" timestamp="1635501341029" />
+  </component>
 </project>
