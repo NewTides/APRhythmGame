@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/EnemyTurnScene.unity
+    guid: 9cba7d0b4915b97409e23fa8d47f197d
   m_configObjects: {}

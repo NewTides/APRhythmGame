@@ -30,12 +30,22 @@ public class BulletController : MonoBehaviour
         if (distance > 0f)
         {
             float direction = -1f; //targetY - currentY;
-            _bullet.transform.Translate(0f,direction * speed * Time.deltaTime,0f, Space.World);
+            _bullet.transform.Translate(0f, direction * speed * Time.deltaTime, 0f, Space.World);
         }
         else
         {
             Destroy(gameObject);
         }
-        
+
+    }
+
+    private void OnTriggerEnter2D(Collider2D end)
+    {
+
+        if (end.gameObject.tag == "Player")
+        {
+            Destroy(gameObject);
+        }
     }
 }
+   

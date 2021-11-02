@@ -8,12 +8,18 @@ public class PlayerController : MonoBehaviour
 {
     private float posX;
     private float posY;
-    private float xStrafe;
+    public float xStrafe;
     private float farRightX;
     private float farLeftX;
+    private float quitTimer;
+    private float barX;
+    private float barY;
+    private float esDrop;
     public int maxES;
     public int currentES;
     public GameObject Player;
+    public GameObject text;
+    public GameObject ESbar;
     
     // Start is called before the first frame update
     void Start()
@@ -27,6 +33,11 @@ public class PlayerController : MonoBehaviour
 
         maxES = 100;
         currentES = maxES;
+        barX = 3.83f;
+        barY = 1.83f;
+        esDrop = 0.27f;
+        
+        ESbar.transform.position = new Vector2 (barX, barY);
         
         /* debug messages I used to figure out why the player could move off the left side of the screen instead of stopping.
         Debug.Log("Right strafe limit: " + farRightX);
@@ -43,6 +54,11 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
+            if (quitTimer == 0)
+            {
+                GameObject note = Instantiate(text,new Vector2(2f,0f),Quaternion.identity);
+                Debug.Log("Game Over");
+            }
             GameOver();
         }
         
@@ -68,8 +84,9 @@ public class PlayerController : MonoBehaviour
         
         if (hit.gameObject.tag == "Bullet")
         {
-            
             currentES -= hit.GetComponent<BulletController>().damage;
+            barY -= esDrop;
+            ESbar.transform.position = new Vector2 (barX, barY);
             Debug.Log("Emotional Stability: " + currentES);
         }
         
@@ -77,6 +94,10 @@ public class PlayerController : MonoBehaviour
 
     private void GameOver()
     {
-        Debug.Log("Game Over");
+        quitTimer += Time.deltaTime;
+        if (quitTimer > 3f)
+        {
+            Application.Quit();
+        }
     }
 }
